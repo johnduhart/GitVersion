@@ -113,6 +113,7 @@ namespace GitVersion
                                 break;
                             }
                             findMergeBase = mergeBase;
+                            commitToFindCommonBase = second;
                             Logger.WriteInfo(string.Format("Merge base was due to a forward merge, next merge base is {0}", findMergeBase));
                         }
                     } while (mergeBaseWasFowardMerge);
